@@ -1,1 +1,1 @@
-# 2DIsing-raspi4
+# Anomaly Detection NN
