@@ -12,7 +12,7 @@ The ```toy_adversarial_1dcnn.ipynb``` notebook then takes these four-vectors as 
 
 ## Requirements
 
-In order to run this program a version of Python 3.6 or higher is required, along with the usual ```numpy```, ```matplotlib```, and ```jupyter notebook``` modules. Furhtermore, ```h5py```, and ```neural-structured-learning``` were also necessary and may be installed through a ```pip``` command. A complete list of requirements can be found in the ```requirements.txt`` file.
+In order to run this program a version of Python 3.6 or higher is required, along with the usual ```numpy```, ```matplotlib```, and ```jupyter notebook``` modules. Furhtermore, ```h5py```, and ```neural-structured-learning``` were also necessary and may be installed through a ```pip``` command. A complete list of requirements can be found in the ```requirements.txt``` file.
 
 This project is also meant to run on a Raspberry Pi model 4B. The most recent version of the Raspbian 64-bit OS and Tensorflow are recommended. Instructions for installing Tensorflow on a Raspberry Pi can be found at **https://qengineering.eu/install-tensorflow-2.4.0-on-raspberry-64-os.html**. Note that the "Intalling from Scratch" procedure may last over 48 hours of compilation time. 
 
