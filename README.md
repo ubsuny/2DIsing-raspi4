@@ -16,3 +16,6 @@ In order to run this program a version of Python 3.6 or higher is required, alon
 
 This project is also meant to run on a Raspberry Pi model 4B. The most recent version of the Raspbian 64-bit OS and Tensorflow are recommended. Instructions for installing Tensorflow on a Raspberry Pi can be found at **https://qengineering.eu/install-tensorflow-2.4.0-on-raspberry-64-os.html**. Note that the "Intalling from Scratch" procedure may last over 48 hours of compilation time. 
 
+## Video Link
+
+https://youtu.be/_262w59on2k
