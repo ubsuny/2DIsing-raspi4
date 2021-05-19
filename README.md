@@ -20,4 +20,4 @@ This project is also meant to run on a Raspberry Pi model 4B; the most recent ve
 
 ## Video Link
 
-A video presentation of this project can be found at: https://youtu.be/xmD2GJmbwCI
+A video presentation of this project can be found at: https://youtu.be/xmD2GJmbwCI.
