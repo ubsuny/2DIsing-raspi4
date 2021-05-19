@@ -1,4 +1,4 @@
-# Convolutional Neural Networks in High Energy Physics
+# Convolutional Neural Networks in HEP for Particle Classification
 
 Welcome to the repository for the PHY 506 final project. The primary aim of this project is to employ Neural Network algorithms to correctly categorize and differetiate signal jets from background QCD jets produced during experiments at the Large Hadron Collider.
 
