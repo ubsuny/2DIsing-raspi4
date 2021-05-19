@@ -1,21 +1,23 @@
-# Anomaly Detection Neural Network
+# Convolutional Neural Networks in High Energy Physics
 
-This is the repository for the PHY 506 final project - it will be routinely updated throughtout the remainder of the semester until the project is complete. The primary aim of this project is to employ Machine Learning (ML) algorithms to detect anomalies in experiments performed at the Large Hadron Collider (LHC).
-
-As we know, collisions between protons give rise to hadron jets composed in partly of quarks and gluons. However, due to color confinement, these particles cannot be directly observed and their properties must be analyzed indirectly. To this end, we will develop a Generative Adversarial Network (GAN) to train generator/discriminator neural network pairs to generate physically sound models. This is essentially the same procedure used differentiate images of cats and dogs, however here we shall distinguish between signal and background jet sources in the hopes of finding new physics beyond the standard model.
+Welcome to the repository for the PHY 506 final project. The primary aim of this project is to employ Neural Network algorithms to correctly categorize and differetiate signal jets from background QCD jets produced during experiments at the Large Hadron Collider.
 
 ## Implementation
 
-This repository is far from complete, however at the present we have a simple yet intuitive toy model that we can train. This entire model was taken from **https://github.com/ubcms-xai/AdversarialNetworks** and has been used to gain a better understanding of neural networks in high energy physics; it is composed of two notebooks. The first of these notebooks is ```makeFourVectors.ipynb``` which creates a series of four-vectors with gaussian and exponential distributions for signal and background jets, respectively. These are then saved in the ```data``` folder as ```.npz``` files.
+This entire model was taken from **https://github.com/ubcms-xai/AdversarialNetworks** and will be used to gain a better understanding of neural networks in high energy physics; it is located in the ```Convolutional Neural Networks``` folder, which contains two sub-folders.
 
-The ```toy_adversarial_1dcnn.ipynb``` notebook then takes these four-vectors as inputs, and trains two adversarial networks to produce accurate synthetic data. The training period is held over 10 epochs. We note that these notebooks are part of the XIA for ML repository at UB, and it is the author's desire to use them as a stepping stone for constructing a program for anomally detection once a better understanding on this is obtained.
+The first of these folders is ```1D CNN``` and contains the files ```makeFourVectors.ipynb``` and ```1D_CNN.ipynb``` in its directory. Running ```makeFourVectors.ipynb``` creates a ```data``` folder where ```.npz``` data files are saved. These files are then fed into ```1D_CNN.ipynb``` which contains the CNN implementation used for jet classification.   
+
+Similarly, the ```2D CNN``` folder contains the files ```makeJetImages.ipynb``` and ```2D_CNN.ipynb``` in its directory. It runs exactly as ```1D CNN```, however the CNN used here trains on a 2-dimensional 16 X 16 image rather than a 1-dimensional list.
+
+An explanation of the physics and the CNN for this project can be found at ```Final Presentation.pdf```.  
 
 ## Requirements
 
-In order to run this program a version of Python 3.6 or higher is required, along with the usual ```numpy```, ```matplotlib```, and ```jupyter notebook``` modules. Furhtermore, ```h5py```, and ```neural-structured-learning``` were also necessary and may be installed through a ```pip``` command. A complete list of requirements can be found in the ```requirements.txt``` file.
+In order to run this program, Python 3.4 or higher is necessary. Besides the usual numpy, matplotlib, etc. installation, this project makes extensive use of TensorFlow along with Keras. A list of the required software can be found in the ```requirements.txt``` file.
 
-This project is also meant to run on a Raspberry Pi model 4B. The most recent version of the Raspbian 64-bit OS and Tensorflow are recommended. Instructions for installing Tensorflow on a Raspberry Pi can be found at **https://qengineering.eu/install-tensorflow-2.4.0-on-raspberry-64-os.html**. Note that the "Intalling from Scratch" procedure may last over 48 hours of compilation time. 
+This project is also meant to run on a Raspberry Pi model 4B; the most recent version of Raspbian 64-bit OS is recommended. Instructions for installing Tensorflow on a Raspberry Pi can be found at **https://qengineering.eu/install-tensorflow-2.4.0-on-raspberry-64-os.html**. Note that the "Intalling from Scratch" procedure may take over 48 hours to complete. Due to the computaional limitations of this hardware, some it the parameters such as epochs, particle number, and number of events may have to be re-adjusted. 
 
 ## Video Link
 
-https://youtu.be/_262w59on2k
+A video presentation of this project can be found at: https://youtu.be/xmD2GJmbwCI
