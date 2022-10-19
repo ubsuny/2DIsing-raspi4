@@ -17,7 +17,3 @@ An explanation of the physics and the CNN for this project can be found at ```Fi
 In order to run this program, Python 3.4 or higher is necessary. Besides the usual numpy, matplotlib, etc. installation, this project makes extensive use of TensorFlow along with Keras. A list of the required software can be found in the ```requirements.txt``` file.
 
 This project is also meant to run on a Raspberry Pi model 4B; the most recent version of Raspbian 64-bit OS is recommended. Instructions for installing Tensorflow on a Raspberry Pi can be found at **https://qengineering.eu/install-tensorflow-2.4.0-on-raspberry-64-os.html**. Note that the "Intalling from Scratch" procedure may take over 48 hours to complete. Due to the computaional limitations of this hardware, some it the parameters such as epochs, particle number, and number of events may have to be re-adjusted. 
-
-## Video Link
-
-A video presentation of this project can be found at: https://youtu.be/xmD2GJmbwCI.
